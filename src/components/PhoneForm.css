@@ -1,0 +1,12 @@
+div{
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0px auto; 
+}
+.name{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.phone{
+    margin-right: 15px;
+}

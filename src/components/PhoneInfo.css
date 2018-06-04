@@ -1,0 +1,25 @@
+.wrapper{
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}
+.inputname{
+    text-align: center;
+    display: inline;
+}
+.inputphone{
+    text-align: center;
+    display: inline;
+}
+.name{
+    text-align: center;
+    display: inline;
+    
+}
+.phone{
+    text-align: center;
+    display: inline;
+    
+}
+.inwrapper{
+    text-align: center;
+}

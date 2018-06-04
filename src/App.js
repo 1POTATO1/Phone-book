@@ -53,7 +53,11 @@ class App extends Component {
       info => info.name.indexOf(keyword) !== -1
     );
     return (
+        
       <div className={styles.form}>
+        <p className="main">
+         Phone Book
+        </p>
         <PhoneForm
           onCreate={this.handleCreate}
         />
@@ -61,9 +65,9 @@ class App extends Component {
           <input
             placeholder="검색 할 이름을 입력하세요.."
             onChange={this.handleChange}
-            value={keyword}
+            value={keyword} className="keyword"
           />
-        </p>
+        </p><br />
         <hr />
         <PhoneInfoList
           data={filteredList}

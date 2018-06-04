@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './PhoneForm.css';
 
 class PhoneForm extends Component {
   state = {
@@ -20,21 +21,23 @@ class PhoneForm extends Component {
   }
   render() {
     return (
+        <div className="wrapper">
       <form onSubmit={this.handleSubmit}>
         <input
           placeholder="이름"
           value={this.state.name}
           onChange={this.handleChange}
-          name="name"
+          name="name" className="name"
         />
         <input
           placeholder="전화번호"
           value={this.state.phone}
           onChange={this.handleChange}
-          name="phone"
+          name="phone" className="phone"
         />
         <button type="submit">등록</button>
       </form>
+        </div>
     );
   }
 }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styles from './PhoneInfo.css';
 
 class PhoneInfo extends Component {
   static defaultProps = {
@@ -56,7 +57,8 @@ class PhoneInfo extends Component {
     const style = {
       border: '1px solid black',
       padding: '8px',
-      margin: '8px'
+      margin: '8px',
+        
     };
 
     const { editing } = this.state;
@@ -64,8 +66,8 @@ class PhoneInfo extends Component {
 
     if (editing) {
       return (
-        <div style={style}>
-          <div>
+        <div className="wrapper" style={style}>
+          <div className="inputname">
             <input
               value={this.state.name}
               name="name"
@@ -73,7 +75,7 @@ class PhoneInfo extends Component {
               onChange={this.handleChange}
             />
           </div>
-          <div>
+          <div className="inputphone">
             <input
               value={this.state.phone}
               name="phone"
@@ -93,9 +95,9 @@ class PhoneInfo extends Component {
     } = this.props.info;
 
     return (
-      <div style={style}>
-        <div><b>{name}</b></div>
-        <div>{phone}</div>
+      <div className="inwrapper" style={style}>
+        <div className="name"><b>{name}</b></div>
+        <div className="phone">{phone}</div>
         <button onClick={this.handleToggleEdit}>수정</button>
         <button onClick={this.handleRemove}>삭제</button>
       </div>
